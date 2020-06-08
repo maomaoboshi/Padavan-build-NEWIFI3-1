@@ -2,6 +2,6 @@
 
 DESTDIR=/opt/rt-n56u
 ROOTDIR=`pwd`
-CONFIG_FILENAME=NEWIFI3.config
+CONFIG_FILENAME=NEWIFI3_test.config
 
 cp -f "${ROOTDIR}/${CONFIG_FILENAME}" "${DESTDIR}/trunk/.config"
