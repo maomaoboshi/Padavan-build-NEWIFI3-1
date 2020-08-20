@@ -1,6 +1,5 @@
 #!/bin/sh
 
-:<<EOF
 
 DIR="/opt/rt-n56u/toolchain-mipsel/toolchain-3.4.x"
 DL_NAME="mipsel-linux-uclibc.tar.xz"
@@ -11,8 +10,8 @@ curl -O -L $DL_URL && \
 mkdir -p $DIR && \
 tar -xvf $DL_NAME -C $DIR
 
-EOF
 
-cd /opt/rt-n56u/toolchain-mipsel
-./clean_toolchain
-./build_toolchain
+
+### cd /opt/rt-n56u/toolchain-mipsel
+### ./clean_toolchain
+### ./build_toolchain
