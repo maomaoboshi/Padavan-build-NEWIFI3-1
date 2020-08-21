@@ -23,7 +23,7 @@ env:
   FIRMWARE_DATEPREFIX: $(date +"%Y%m%d")
   FIRMWARE_AUTHOR: chongshengB
   FIRMWARE_PATH: /opt/firmwares
-  APPLY_RAINBOWTHEME: y
+  APPLY_RAINBOWTHEME: true
   RECOVERY_SSPBINREMOTEDOWNLOAD: false
   BUILD_OWNER: maomaoboshi
   UPLOAD_COWTRANSFER: true
@@ -53,7 +53,7 @@ jobs:
         wget $TOOLCHAIN_URL
         tar -xvf mipsel-linux-uclibc.tar.xz -C toolchain-3.4.x
     - name: Apply rainbow themes
-      if: env.APPLY_RAINBOWTHEME == 'y'
+      if: env.APPLY_RAINBOWTHEME == 'true'
       run: |
         cp -f rainbow/rainbowthemes.tar.xz $WORK_PATH/trunk/user/www
         cd $WORK_PATH/trunk/user/www
